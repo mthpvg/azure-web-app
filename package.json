@@ -1,0 +1,29 @@
+{
+  "name": "azure-web-app",
+  "version": "0.1.0",
+  "description": "azure web app test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthpvg/azure-web-app.git"
+  },
+  "keywords": [
+    "azure",
+    "web",
+    "app",
+    "hello",
+    "world"
+  ],
+  "author": "mthpvg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mthpvg/azure-web-app/issues"
+  },
+  "homepage": "https://github.com/mthpvg/azure-web-app#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

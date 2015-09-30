@@ -1,37 +1,38 @@
 {
-	"name": "azure-web-app",
-	"version": "0.1.0",
-	"description": "azure web app test",
-	"main": "server.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/mthpvg/azure-web-app.git"
-	},
-	"keywords": [
-		"azure",
-		"web",
-		"app",
-		"hello",
-		"world"
-	],
-	"author": "mthpvg",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/mthpvg/azure-web-app/issues"
-	},
-	"homepage": "https://github.com/mthpvg/azure-web-app#readme",
-	"dependencies": {
-		"body-parser": "~1.12.0",
-		"connect-redis": "^2.5.0",
-		"cookie-parser": "~1.3.4",
-		"express": "^4.13.3",
-		"express-session": "^1.11.3",
-		"jade": "^1.11.0",
-		"morgan": "^1.6.1",
-		"serve-favicon": "^2.3.0",
-		"stylus": "^0.52.4"
-	}
+  "name": "azure-web-app",
+  "version": "0.1.0",
+  "description": "azure web app test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthpvg/azure-web-app.git"
+  },
+  "keywords": [
+    "azure",
+    "web",
+    "app",
+    "hello",
+    "world"
+  ],
+  "author": "mthpvg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mthpvg/azure-web-app/issues"
+  },
+  "homepage": "https://github.com/mthpvg/azure-web-app#readme",
+  "dependencies": {
+    "body-parser": "~1.12.0",
+    "connect-redis": "^2.5.0",
+    "cookie-parser": "~1.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0",
+    "stylus": "^0.52.4",
+    "windows-cpu": "^0.1.4"
+  }
 }

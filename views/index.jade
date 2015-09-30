@@ -4,10 +4,22 @@ block content
   .container
     .blue hostname
     p #{data.hostname}
+    .blue type
+    p #{data.type}
+    .blue platform
+    p #{data.platform}
+    .blue arch
+    p #{data.arch}
     .blue nbCPU
     p #{data.nbCPU}
-    .blue loadCPU
-    p #{data.loadCPU}
+    if data.wincpu
+      .blue wincpu
+      p #{data.wincpu}
+    else
+      .blue loadavg
+      p #{data.loadavg}
+      .blue loadCPU
+      p #{data.loadCPU}
     .blue loadRAM
     p #{data.loadRAM}
     .blue UTCdate

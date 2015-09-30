@@ -22,6 +22,10 @@ block content
     p #{data.loadRAM}
     .blue UTCdate
     p #{data.UTCdate}
+    .blue networkInterfaces
+    p #{data.networkInterfaces}
+    .blue cpus
+    p #{data.cpus}
 
   each link in links
     link(rel=link.rel, href=link.href)

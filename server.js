@@ -12,7 +12,7 @@ var express = require('express'),
 // cookieParser = require('cookie-parser'),
 // expressSession = require('express-session'),
 // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -CONFIG
-// GLOB = require('./config/GLOBAL'),
+GLOB = require('./config/GLOBAL'),
 // //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -ROUTES
 // index = require('./routes/webpages/index'),
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - VARIABLES
@@ -77,7 +77,7 @@ app.use('/', function (req, res, next) {
 // 	});
 // });
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -LISTEN
-app.listen(GLOB.PORT);
+app.listen(process.env.PORT || GLOB.PORT);
 //-----------------------------------------------------------------------------
 //                                     END
 //-----------------------------------------------------------------------------

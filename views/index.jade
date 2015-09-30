@@ -1,0 +1,19 @@
+extends ./layouts/main
+
+block content
+  .container
+    .blue hostname
+    p #{data.hostname}
+    .blue nbCPU
+    p #{data.nbCPU}
+    .blue loadCPU
+    p #{data.loadCPU}
+    .blue loadRAM
+    p #{data.loadRAM}
+    .blue UTCdate
+    p #{data.UTCdate}
+
+  each link in links
+    link(rel=link.rel, href=link.href)
+  each script in scripts
+    script(src=script)

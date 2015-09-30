@@ -1,0 +1,19 @@
+{
+  "PORT": "3020",
+  "SECRET": "fm57rt40SNUI6791akixp5943SCLlerv5791OUSB",
+  "LINKS": {
+    "BOOTSTRAP": "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+  },
+  "SCRIPTS": {
+    "JQUERY": "//code.jquery.com/jquery-1.11.3.min.js",
+    "BOOTSTRAP": "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+  },
+  "LANGUAGE": {
+    "SUPPORTED":
+    [
+      "en",
+      "fr"
+    ],
+    "DEFAULT": "en"
+  }
+}

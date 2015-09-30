@@ -44,46 +44,18 @@ router.get('/', function (req, res) {
   
   var d = new Date();
   data.UTCdate = d.toISOString();
-  console.log(platform);
-  if (platform === "linux") {
-    
-    res.render('index', {
-      scripts: [
-        GLOBAL.SCRIPTS.JQUERY,
-        GLOBAL.SCRIPTS.BOOTSTRAP
-      ],
-      links: [
-        {rel: 'stylesheet', href: GLOBAL.LINKS.BOOTSTRAP},
-        {rel: 'stylesheet', href: '/css/index.css'}
-      ],
-      data: data
-    });
-  } else {
-    var wincpu = require('windows-cpu');
-    wincpu.totalLoad(function(error, results) {
-      if(error) {
-        return console.log(error);
-      } else {
-        data.wincpu = results;
-      }
-      
-      res.render('index', {
-        scripts: [
-          GLOBAL.SCRIPTS.JQUERY,
-          GLOBAL.SCRIPTS.BOOTSTRAP
-        ],
-        links: [
-          {rel: 'stylesheet', href: GLOBAL.LINKS.BOOTSTRAP},
-          {rel: 'stylesheet', href: '/css/index.css'}
-        ],
-        data: data
-      });
-      
-      
-    });
-    
-  }
   
+  res.render('index', {
+    scripts: [
+      GLOBAL.SCRIPTS.JQUERY,
+      GLOBAL.SCRIPTS.BOOTSTRAP
+    ],
+    links: [
+      {rel: 'stylesheet', href: GLOBAL.LINKS.BOOTSTRAP},
+      {rel: 'stylesheet', href: '/css/index.css'}
+    ],
+    data: data
+  });
 });
 //-----------------------------------------------------------------------------
 //									                  EXPORTS

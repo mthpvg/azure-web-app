@@ -31,6 +31,7 @@ router.get('/', function (req, res) {
   var arch = os.arch();
   var networkInterfaces = os.networkInterfaces();
   var cpus = os.cpus();
+  var environmentVars = process.env
   
   for (var i = 0; i < loadavg.length; i++) {
     loadCPU.push(parseFloat((1.0 * loadavg[i] / nbCPU * 100).toFixed(2)));
@@ -44,10 +45,10 @@ router.get('/', function (req, res) {
     "arch": arch,
     "nbCPU": nbCPU,
     "loadCPU": loadCPU,
-    "loadavg": loadavg,
     "loadRAM": parseFloat(loadRAM.toFixed(2)),
-    "networkInterfaces": JSON.stringify(networkInterfaces),
-    "cpus": JSON.stringify(cpus)
+    "networkInterfaces": networkInterfaces,
+    "cpus": cpus,
+    "environmentVars": environmentVars
   };
   
   var d = new Date();

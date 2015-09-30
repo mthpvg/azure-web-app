@@ -14,8 +14,6 @@ block content
     p #{data.arch}
     .blue nbCPU
     p #{data.nbCPU}
-    .blue loadavg
-    p #{data.loadavg}
     .blue loadCPU
     p #{data.loadCPU}
     .blue loadRAM
@@ -23,9 +21,16 @@ block content
     .blue UTCdate
     p #{data.UTCdate}
     .blue networkInterfaces
-    p #{data.networkInterfaces}
+    each val, index in data.networkInterfaces
+      - var myval = JSON.stringify(val);
+      p #{index} : #{myval}
     .blue cpus
-    p #{data.cpus}
+    each val, index in data.cpus
+      - var myval = JSON.stringify(val);
+      p #{myval}
+    .blue environmentVars
+    each val, index in data.environmentVars
+      p #{index} : #{val}
 
   each link in links
     link(rel=link.rel, href=link.href)

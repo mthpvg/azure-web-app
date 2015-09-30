@@ -2,6 +2,8 @@ extends ./layouts/main
 
 block content
   .container
+    .blue hostUUID
+    p #{data.hostUUID}
     .blue hostname
     p #{data.hostname}
     .blue type
@@ -12,14 +14,10 @@ block content
     p #{data.arch}
     .blue nbCPU
     p #{data.nbCPU}
-    if data.wincpu
-      .blue wincpu
-      p #{data.wincpu}
-    else
-      .blue loadavg
-      p #{data.loadavg}
-      .blue loadCPU
-      p #{data.loadCPU}
+    .blue loadavg
+    p #{data.loadavg}
+    .blue loadCPU
+    p #{data.loadCPU}
     .blue loadRAM
     p #{data.loadRAM}
     .blue UTCdate

@@ -33,6 +33,7 @@
     "morgan": "^1.6.1",
     "serve-favicon": "^2.3.0",
     "stylus": "^0.52.4",
+    "uuid": "^2.0.1",
     "windows-cpu": "^0.1.4"
   }
 }

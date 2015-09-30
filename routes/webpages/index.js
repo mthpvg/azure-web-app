@@ -6,9 +6,11 @@
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -REQUIRES
 var express = require('express'),
 os = require('os'),
+uuid = require('uuid'),
 router = express.Router(),
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -CONFIG
 GLOBAL = require('../../config/GLOBAL');
+var hostUUID = uuid.v4();
 //-----------------------------------------------------------------------------
 //									                  DECLARATIONS
 //-----------------------------------------------------------------------------
@@ -18,6 +20,7 @@ GLOBAL = require('../../config/GLOBAL');
 //-----------------------------------------------------------------------------
 router.get('/', function (req, res) {
   
+
   var nbCPU = os.cpus().length;
   var loadRAM = 1.0 * os.freemem() / os.totalmem() * 100;
   var loadCPU = [];
@@ -32,6 +35,7 @@ router.get('/', function (req, res) {
   }
   
   var data = {
+    "hostUUID": hostUUID,
     "hostname": hostname,
     "type": type,
     "platform": platform,
